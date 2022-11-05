@@ -3,4 +3,4 @@ b = 10
 c = a + b
 print('a =',a)
 print('b =',b)
-print(c)
+print('a + b = ',c)
