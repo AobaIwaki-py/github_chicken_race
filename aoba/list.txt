@@ -1,0 +1,6 @@
+total 32
+-rw-r--r--  1 iwakiaoiyou  staff  39 11  5 00:41 code.c
+-rw-r--r--  1 iwakiaoiyou  staff  89 11  5 01:00 code.py
+-rw-r--r--  1 iwakiaoiyou  staff   6 11  5 18:08 hello.txt
+-rw-r--r--  1 iwakiaoiyou  staff   0 11  5 18:09 list.txt
+-rw-r--r--  1 iwakiaoiyou  staff  28 11  2 20:04 text_file.text
