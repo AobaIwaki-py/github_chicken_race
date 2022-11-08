@@ -4,9 +4,9 @@
 
 # 計算用プログラム
 # 足し算
-def add(a: int, b: int) -> int:
-    return (a + b)
+def add(a: float, b: float, c:float) -> float:
+    return (a + b + c)
 
 # 実行
 if __name__ == "__main__":
-    print(add(2,3))
+    print(add(2,3,4))
