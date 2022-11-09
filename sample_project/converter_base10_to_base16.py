@@ -8,9 +8,9 @@ def converter_base10_to_base16(base10_list):
     base16: str = ""
     for base10 in base10_list:
         if(base10/10 < 1):
-            base16 += str(base10)
+            base16 += str(int(base10))
         else:
-            base16 += ALPHABET[base10%10]
+            base16 += ALPHABET[int(base10%10)]
     return base16
     pass
 
