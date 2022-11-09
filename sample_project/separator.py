@@ -3,7 +3,7 @@
 # 仕様：入力された2進数を4桁ごとに区切る
 import numpy as np
 
-def base2_separator(base2_list):
+def base2_separator(base2_list: 'np.ndarray'):
     return base2_list.reshape(4,4)
 
 if __name__ == "__main__":

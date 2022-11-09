@@ -3,7 +3,7 @@
 # 仕様：10進数を16進数に変換する
 import numpy as np
 
-def converter_base10_to_base16(base10_list):
+def converter_base10_to_base16(base10_list: 'np.ndarray'):
     ALPHABET = ["A", "B", "C", "D", "E", "F"]
     base16: str = ""
     for base10 in base10_list:
