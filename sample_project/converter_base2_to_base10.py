@@ -16,9 +16,9 @@ def base10_converter(base2_sep):
 
         n = 0
 
-        for exp in base2_sep[index,:]:
+        for binary in base2_sep[index,:]:
             
-            if(exp == 1):    
+            if(binary == 1):    
                 base10_list[index] += 2**(3-n) 
 
             n += 1  
