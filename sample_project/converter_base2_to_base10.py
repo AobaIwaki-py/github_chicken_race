@@ -4,10 +4,6 @@
 import numpy as np
 
 
-def base2_separator(base2_list):
-    return base2_list.reshape(4,4)
-
-
 def base10_converter(base2_sep):
     shape = np.shape(base2_sep)
     base10_list = np.zeros(shape[0])
@@ -28,8 +24,7 @@ def base10_converter(base2_sep):
 
 if __name__ == "__main__":
     sample_list = np.array([[0,0,0,1],[0,0,1,0],[0,0,1,1],[0,1,0,0]])
-    sep = base2_separator(sample_list)
-    base10 = base10_converter(sep)
+    base10 = base10_converter(sample_list)
     print(base10)
     print(type(base10))
 
