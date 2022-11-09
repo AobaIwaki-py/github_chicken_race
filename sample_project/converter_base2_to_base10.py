@@ -8,14 +8,14 @@ def base10_converter(base2_sep):
     shape = np.shape(base2_sep)
     base10_list = np.zeros(shape[0])
 
-    for index in range(0,4):
+    for index in range(0,shape[1]):
 
-        n = 0
+        n = 1
 
         for binary in base2_sep[index,:]:
             
             if(binary == 1):    
-                base10_list[index] += 2**(3-n) 
+                base10_list[index] += 2**(shape[1]-n) 
 
             n += 1  
 
