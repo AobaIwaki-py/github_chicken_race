@@ -1,12 +1,35 @@
 # 入力：4つに区切られた二進数（ndarray）
-# 出力：4つの値ごとに10進数に変換（ndarray）
-# 仕様：入力、出力ともにndarray型
+# 出力：10進数のndarray
+# 仕様：入力で入ってきた4つごとの値を10進数に変換する
 import numpy as np
 
-def base2_create(a=0,b=2,c=16):
-    binary_array = np.random.randint(a,b, (c))
-    return binary_array
+
+def base2_separator(base2_list):
+    return base2_list.reshape(4,4)
+
+
+def base10_converter(base2_sep):
+    shape = np.shape(base2_sep)
+    base10_list = np.zeros(shape[0])
+
+    for index in range(0,4):
+
+        n = 0
+
+        for exp in base2_sep[index,:]:
+            
+            if(exp == 1):    
+                base10_list[index] += 2**(3-n) 
+
+            n += 1  
+
+    return base10_list
+
 
 if __name__ == "__main__":
-    print(base2_create())
-    print(type(base2_create()))
+    sample_list = np.array([[0,0,0,1],[0,0,1,0],[0,0,1,1],[0,1,0,0]])
+    sep = base2_separator(sample_list)
+    base10 = base10_converter(sep)
+    print(base10)
+    print(type(base10))
+
